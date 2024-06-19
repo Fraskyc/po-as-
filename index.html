@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="czech-weather-container">
+            <h3>Počasí v Česku (týdenní předpověď)</h3>
+            <div id="weekly-forecast-wrapper">
+                <button id="left-scroll" class="scroll-button">&lt;</button>
+                <div id="weekly-forecast"></div>
+                <button id="right-scroll" class="scroll-button">&gt;</button>
+            </div>
+        </div>
+        <div id="weather-container">
+            <h2>Weather App</h2>
+            <input type="text" id="city" placeholder="Enter city">
+            <button onclick="getWeather()">Search</button>
+
+            <img id="weather-icon" alt="Weather Icon">
+
+            <div id="temp-div"></div>
+
+            <div id="weather-info"></div>
+
+            <div id="hourly-forecast"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
